@@ -7,8 +7,8 @@
 </p>
 
 <p align="center">
-  手机里的服务，电脑上的客户端，中间缺的那一小段连接。<br />
-  这里放着一些围绕日常使用需求展开的尝试，也留着折腾过的痕迹。
+  从已有的开源项目出发，试着把工具变成自己用着更顺手的样子。<br />
+  提出想法，让 AI 修改，再在实际使用中测试、反馈、继续调整。
 </p>
 
 <p align="center">
@@ -32,45 +32,50 @@
       <p><sub>Android / Windows · 本地代理 · 流式对话</sub></p>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/Baidaofu/niji-local">niji-local ↗</a></h3>
-      <p>让手机里的图像生成，也能接进熟悉的工作流。</p>
-      <p>为 niji・journey 提供本地接口，连接 OpenAI、NovelAI 和 A1111 兼容客户端。</p>
-      <p><sub>Android · LSPosed · 图像生成</sub></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
       <h3><a href="https://github.com/Baidaofu/GLM-Free-APK">GLM-Free-APK ↗</a></h3>
       <p>把原本跑在服务端的工具，装进口袋。</p>
       <p>基于上游 GLM-Free-API 的 Android 封装，在手机上启动服务、调整设置和查看日志。</p>
       <p><sub>Android · 上游移植 · 本地服务</sub></p>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/Baidaofu/deepseek-api">deepseek-api ↗</a></h3>
       <p>给 DeepSeek Android 补上连接外部客户端的入口。</p>
       <p>基于上游 Deekseep 的调整版本，恢复 Local API，提供 OpenAI / Anthropic 兼容网关。</p>
       <p><sub>Android · 上游改版 · API 兼容</sub></p>
     </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Baidaofu/WarpLovesanyone">WarpLovesanyone ↗</a></h3>
+      <p>让想走 WARP 的应用走 WARP，让主题跟着系统走。</p>
+      <p>基于 WarpLovesPlayStore 的改版，加入应用选择列表和跟随系统的深色模式。</p>
+      <p><sub>Android · Xposed · 网络与主题</sub></p>
+    </td>
   </tr>
 </table>
 
-另外两件小东西：
+### [WeRecord · 微记录 ↗](https://github.com/Baidaofu/WeRecord)
 
-- [**deekseep-onlyapi**](https://github.com/Baidaofu/deekseep-onlyapi) — 将 Local API 独立重实现为轻量模块，少一点界面，多一点连接。
-- [**WarpLovesanyone**](https://github.com/Baidaofu/WarpLovesanyone) — 基于 WarpLovesPlayStore 的改版，让选定应用走 WARP，顺便让深色模式跟随系统。
+让一个已经归档的工具，在新版本微信上继续派上用场。
+
+基于原版 WeRecord，适配新版消息与媒体格式，调整图片、视频、语音的查看体验，以及聊天记录和数据库导出。
+
+<sub>Android · 上游适配 · 本地微信记录</sub>
 
 ## 关于这些仓库
 
-**这里的项目代码全部由 AI 完成。** 不把它们当作个人技术能力的证明；比起一份作品履历，这里更像一张由实际需求、AI 和开源项目共同拼起来的工具桌。
+这些项目都有上游，并不是从零写起的原创作品。**在上游代码的基础上，新增与修改的代码由 AI 完成，构建也交给 AI；我提出想法，在实际使用中测试，把问题和反馈带回下一轮调整。**
 
-移植、改版和 fork 都有各自的来处。已有的开源成果是这些尝试的起点，原作者的工作与贡献不应被 AI 生成的改动盖过去。
+这里更像一张慢慢整理的工具桌，而不是一份技术履历。感谢原作者提供起点，也如实记录 AI 的参与：留下这些仓库，是希望改出来的东西也能对别人有用。
 
 <details>
   <summary>开源来处与使用说明</summary>
 
 - **GLM-Free-APK**：服务端来自 [GLM-Free-API](https://github.com/izaart95-jpg/GLM-Free-API)，Android 工程结构参考 [ds2api-android](https://github.com/SUN-0v/ds2api-android)。
-- **deepseek-api / deekseep-onlyapi**：基于 [Deekseep](https://github.com/lllucccian/Deekseep) 的相关工作。
+- **MiniTavernBridge**：围绕 MiniTavern 后端与现有客户端的接入需求展开，具体依赖与实现说明见项目 README。
+- **deepseek-api**：基于 [Deekseep](https://github.com/lllucccian/Deekseep) 的相关工作。
 - **WarpLovesanyone**：来自 [WarpLovesPlayStore](https://github.com/BruceZhang1993/WarpLovesPlayStore)。
+- **WeRecord**：基于已归档的 [xjunz/WeRecord](https://github.com/xjunz/WeRecord)，wxgf 图片处理思路参考 [wxgf2jpg](https://github.com/yansorau/wxgf2jpg)。
 - 其他 fork 的来源可在对应仓库查看；具体许可、依赖、设备要求与已知限制，以各项目 README 为准。
 - 这些工具有各自的使用条件，也可能随上游变化而失效。遇到问题，可以在对应仓库留下复现信息。
 
