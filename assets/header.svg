@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Baidaofu — Small ideas. Useful connections.</title>
+  <desc id="desc">A dark blue banner with connected nodes representing apps, local APIs and clients.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1200" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101827"/>
+      <stop offset="1" stop-color="#172A3A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="70" y1="0" x2="390" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A7F3D0"/>
+      <stop offset="1" stop-color="#93C5FD"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#94A3B8" stroke-opacity="0.045"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="320" rx="24" fill="url(#background)"/>
+  <rect width="1200" height="320" rx="24" fill="url(#grid)"/>
+  <path d="M72 71H120" stroke="url(#accent)" stroke-width="4" stroke-linecap="round"/>
+  <text x="72" y="139" fill="#F1F5F9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="54" font-weight="650" letter-spacing="-2">Baidaofu</text>
+  <text x="74" y="184" fill="#B9C9D8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="23" letter-spacing="0.3">Small ideas. Useful connections.</text>
+  <text x="74" y="250" fill="#8BA4B9" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="13" letter-spacing="2">AI-WRITTEN CODE / OPEN-SOURCE ROOTS</text>
+  <g stroke="#65849A" stroke-width="1.5" stroke-opacity="0.55">
+    <path d="M805 98L945 160L1080 88"/>
+    <path d="M805 226L945 160L1080 232"/>
+    <path d="M945 160H1126" stroke-dasharray="4 7"/>
+  </g>
+  <g font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="12" text-anchor="middle">
+    <rect x="746" y="77" width="118" height="42" rx="12" fill="#192B3C" stroke="#3C586F"/>
+    <text x="805" y="103" fill="#B9C9D8">Android</text>
+    <rect x="746" y="205" width="118" height="42" rx="12" fill="#192B3C" stroke="#3C586F"/>
+    <text x="805" y="231" fill="#B9C9D8">Desktop</text>
+    <rect x="884" y="132" width="122" height="56" rx="16" fill="#183B40" stroke="#74BFAE"/>
+    <text x="945" y="165" fill="#C5F4E5">Local API</text>
+    <circle cx="1080" cy="88" r="7" fill="#93C5FD"/>
+    <circle cx="1080" cy="232" r="7" fill="#A7F3D0"/>
+    <circle cx="1130" cy="160" r="4" fill="#65849A"/>
+    <text x="1080" y="64" fill="#8BA4B9">clients</text>
+    <text x="1080" y="263" fill="#8BA4B9">tools</text>
+  </g>
+</svg>
